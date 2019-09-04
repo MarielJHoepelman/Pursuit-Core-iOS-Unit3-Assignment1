@@ -14,6 +14,8 @@
 		577E5BF621BA8BA20083EB97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577E5BF421BA8BA20083EB97 /* LaunchScreen.storyboard */; };
 		577E5BFF21BA8C3B0083EB97 /* userinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 577E5BFE21BA8C3B0083EB97 /* userinfo.json */; };
 		577E5C0121BA8C5C0083EB97 /* applstockinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 577E5C0021BA8C5C0083EB97 /* applstockinfo.json */; };
+		58247C6D231FFF4B003E2E12 /* contacts.json in Resources */ = {isa = PBXBuildFile; fileRef = 58247C6C231FFF4B003E2E12 /* contacts.json */; };
+		58247C702320027F003E2E12 /* applestocks.json in Resources */ = {isa = PBXBuildFile; fileRef = 58247C6F2320027F003E2E12 /* applestocks.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		577E5BF721BA8BA20083EB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		577E5BFE21BA8C3B0083EB97 /* userinfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userinfo.json; sourceTree = "<group>"; };
 		577E5C0021BA8C5C0083EB97 /* applstockinfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = applstockinfo.json; sourceTree = "<group>"; };
+		58247C6C231FFF4B003E2E12 /* contacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contacts.json; sourceTree = "<group>"; };
+		58247C6F2320027F003E2E12 /* applestocks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = applestocks.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				577E5BED21BA8BA10083EB97 /* ViewController.swift */,
+				58247C6E231FFF64003E2E12 /* JSON files */,
 				577E5BEF21BA8BA10083EB97 /* Main.storyboard */,
 				577E5BFD21BA8BE20083EB97 /* Supporting Files */,
 				577E5BF721BA8BA20083EB97 /* Info.plist */,
@@ -84,6 +89,15 @@
 				577E5C0021BA8C5C0083EB97 /* applstockinfo.json */,
 			);
 			path = json;
+			sourceTree = "<group>";
+		};
+		58247C6E231FFF64003E2E12 /* JSON files */ = {
+			isa = PBXGroup;
+			children = (
+				58247C6C231FFF4B003E2E12 /* contacts.json */,
+				58247C6F2320027F003E2E12 /* applestocks.json */,
+			);
+			path = "JSON files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +162,8 @@
 				577E5C0121BA8C5C0083EB97 /* applstockinfo.json in Resources */,
 				577E5BF621BA8BA20083EB97 /* LaunchScreen.storyboard in Resources */,
 				577E5BF321BA8BA20083EB97 /* Assets.xcassets in Resources */,
+				58247C6D231FFF4B003E2E12 /* contacts.json in Resources */,
+				58247C702320027F003E2E12 /* applestocks.json in Resources */,
 				577E5BF121BA8BA10083EB97 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
