@@ -9,28 +9,51 @@
 import UIKit
 
 class StocksViewController: UIViewController {
-
+    
+    var stocks = [StocksFromJSON]()
+    
     @IBOutlet weak var stocksTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         stocksTableView.delegate = self
-        stocksTableView.dataSource = self 
-
+        stocksTableView.dataSource = self
+        loadData()
+        print(stocks)
+    }
+    
+    private func loadData() {
+        guard let pathToJSONFile = Bundle.main.path(forResource: "applestocks", ofType: "json") else {
+            fatalError("Coudn't find json file")
+        }
+        print(pathToJSONFile)
+        
+        let url = URL(fileURLWithPath: pathToJSONFile)
+        do {
+            
+            let data = try
+                Data(contentsOf: url)
+            
+            let stocksFromJSON = try StocksFromJSON.getStocks(from: data)
+            stocks = stocksFromJSON
+            
+        } catch {
+            print(error)
+        }
     }
     
 }
 
 extension StocksViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return stocks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = stocksTableView.dequeueReusableCell(withIdentifier: "stocksCell")
-//        let result = contacts.results[indexPath.row]
-        cell?.textLabel?.text = "test"
-        cell?.detailTextLabel?.text = "test"
+
+        cell?.textLabel?.text = stocks[indexPath.row].date
+        cell?.detailTextLabel?.text = String(stocks[indexPath.row].open)
        return cell!
     }
     

@@ -16,7 +16,7 @@ struct StocksFromJSON: Codable {
     let close: Double
     let open: Double
     
-    static func getContact(from data: Data) throws -> [StocksFromJSON] {
+    static func getStocks(from data: Data) throws -> [StocksFromJSON] {
         do {
             let stock = try
                 JSONDecoder().decode([StocksFromJSON].self, from: data)
