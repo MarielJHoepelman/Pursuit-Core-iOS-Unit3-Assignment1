@@ -19,7 +19,6 @@ class ContactsViewController: UIViewController {
         ContactsTableView.dataSource = self
         ContactsTableView.delegate = self
         loadData()
-        print(contacts)
     }
     
     private func loadData() {
@@ -36,12 +35,19 @@ class ContactsViewController: UIViewController {
             
             let contactsFromJSON = try ContactsFromJSON.getContact(from: data)
             contacts = contactsFromJSON
-            print(contacts)
+
         } catch {
             print(error)
         }
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let contactsDVC = segue.destination as? ContactsDetailedViewController else
+        {fatalError("No contact found")}
+        guard let selectedIndexPath = ContactsTableView.indexPathForSelectedRow else {fatalError()}
+        
+        contactsDVC.contact = contacts?.results[selectedIndexPath.row]
+    }
 
 }
 

@@ -30,6 +30,7 @@ struct ContactsFromJSON: Codable {
 struct Contacts: Codable {
     let name: Name
     let location: Location
+    let email: String 
 }
 
 struct Name: Codable {
