@@ -12,13 +12,13 @@ enum ContactsJSONError: Error {
     case decodingError(Error)
 }
 
-struct Results: Codable {
-    let contacts: [Contacts]
+struct ContactsFromJSON: Codable {
+    let results: [Contacts]
     
-    static func getContact(from data: Data) throws -> Results {
+    static func getContact(from data: Data) throws -> ContactsFromJSON {
         do {
             let contact = try
-                JSONDecoder().decode(Results.self, from: data)
+                JSONDecoder().decode(ContactsFromJSON.self, from: data)
             return contact
         } catch {
             throw ContactsJSONError.decodingError(error)
