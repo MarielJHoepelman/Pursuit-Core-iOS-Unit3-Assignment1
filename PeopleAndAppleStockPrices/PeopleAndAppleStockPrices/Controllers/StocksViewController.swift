@@ -42,6 +42,17 @@ class StocksViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let stocksDVC = segue.destination as? StocksDetailedViewController else {
+            fatalError("Destination not found")
+        }
+        guard let selectedIndexPath = stocksTableView.indexPathForSelectedRow else {
+            fatalError()
+        }
+        
+        stocksDVC.stock = stocks[selectedIndexPath.row]
+    }
+    
 }
 
 extension StocksViewController: UITableViewDataSource {
