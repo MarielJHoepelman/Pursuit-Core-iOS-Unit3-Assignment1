@@ -19,6 +19,7 @@
 		58247C742320331A003E2E12 /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58247C732320331A003E2E12 /* ContactsModel.swift */; };
 		58247C7923204AB0003E2E12 /* ContactsDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58247C7823204AB0003E2E12 /* ContactsDetailedViewController.swift */; };
 		58247C7B23205F8F003E2E12 /* StocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58247C7A23205F8F003E2E12 /* StocksViewController.swift */; };
+		58247C7D23206A39003E2E12 /* StocksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58247C7C23206A39003E2E12 /* StocksModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		58247C732320331A003E2E12 /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
 		58247C7823204AB0003E2E12 /* ContactsDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDetailedViewController.swift; sourceTree = "<group>"; };
 		58247C7A23205F8F003E2E12 /* StocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksViewController.swift; sourceTree = "<group>"; };
+		58247C7C23206A39003E2E12 /* StocksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		58247C752320331F003E2E12 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				58247C7C23206A39003E2E12 /* StocksModel.swift */,
 				58247C732320331A003E2E12 /* ContactsModel.swift */,
 			);
 			path = Models;
@@ -212,6 +215,7 @@
 				58247C7923204AB0003E2E12 /* ContactsDetailedViewController.swift in Sources */,
 				58247C742320331A003E2E12 /* ContactsModel.swift in Sources */,
 				58247C7223203285003E2E12 /* ContactsViewController.swift in Sources */,
+				58247C7D23206A39003E2E12 /* StocksModel.swift in Sources */,
 				58247C7B23205F8F003E2E12 /* StocksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
