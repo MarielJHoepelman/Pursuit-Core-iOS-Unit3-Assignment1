@@ -48,6 +48,7 @@
                     </view>
                     <connections>
                         <outlet property="emailLabel" destination="w3U-Tl-cf2" id="LLr-cS-fmt"/>
+                        <outlet property="imageView" destination="lLd-pw-anH" id="S42-Bi-cZz"/>
                         <outlet property="nameLabel" destination="f79-nA-9Nu" id="vWc-PT-jCS"/>
                         <outlet property="stateLabel" destination="I8h-gd-z4t" id="8yV-Jf-hDQ"/>
                     </connections>
@@ -168,7 +169,9 @@
                                     <constraint firstItem="FUZ-0u-cqV" firstAttribute="centerY" secondItem="4wu-bO-C7C" secondAttribute="centerY" id="6Cd-T5-zNg"/>
                                     <constraint firstAttribute="bottom" secondItem="FUZ-0u-cqV" secondAttribute="bottom" constant="185" id="6zD-Ef-7kl"/>
                                     <constraint firstItem="FUZ-0u-cqV" firstAttribute="leading" secondItem="4wu-bO-C7C" secondAttribute="leading" id="Eov-NV-0uP"/>
+                                    <constraint firstAttribute="trailing" secondItem="FUZ-0u-cqV" secondAttribute="trailing" id="KdY-UV-kqT"/>
                                     <constraint firstAttribute="trailing" secondItem="OAW-Qr-2Ez" secondAttribute="trailing" id="NQg-t1-H0s"/>
+                                    <constraint firstItem="FUZ-0u-cqV" firstAttribute="leading" secondItem="4wu-bO-C7C" secondAttribute="leading" id="VNU-mQ-DJ5"/>
                                     <constraint firstItem="FUZ-0u-cqV" firstAttribute="top" secondItem="4wu-bO-C7C" secondAttribute="top" constant="185" id="X73-gg-JeT"/>
                                     <constraint firstItem="OAW-Qr-2Ez" firstAttribute="leading" secondItem="4wu-bO-C7C" secondAttribute="leading" id="cj0-6x-kNz"/>
                                     <constraint firstItem="OAW-Qr-2Ez" firstAttribute="height" secondItem="4wu-bO-C7C" secondAttribute="height" multiplier="0.5" id="cmM-bi-GCD"/>
@@ -278,10 +281,10 @@
             </objects>
             <point key="canvasLocation" x="243" y="-256"/>
         </scene>
-        <!--Item 1-->
+        <!--People-->
         <scene sceneID="jf1-uF-mzs">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y6s-nX-ygu" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y6s-nX-ygu" userLabel="People" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item 1" id="84v-60-bar"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vWu-tg-FMq">
@@ -297,10 +300,10 @@
             </objects>
             <point key="canvasLocation" x="1160.8695652173915" y="-579.24107142857144"/>
         </scene>
-        <!--Item 2-->
+        <!--Stocks-->
         <scene sceneID="uhP-eA-Aoc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7DS-eN-MI4" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7DS-eN-MI4" userLabel="Stocks" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item 2" id="C2i-L1-xdA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xl3-1c-IIh">

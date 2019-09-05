@@ -36,6 +36,7 @@ class StocksDetailedViewController: UIViewController {
     }
     
     private func switchImage(open: Double, close: Double) -> Void {
+        
         let  thumbsUp = UIImage.init(named: "thumbsUp")
         let thumbsDown = UIImage.init(named: "thumbsDown")
         

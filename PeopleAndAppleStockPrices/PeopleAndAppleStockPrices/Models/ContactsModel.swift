@@ -30,7 +30,8 @@ struct ContactsFromJSON: Codable {
 struct Contacts: Codable {
     let name: Name
     let location: Location
-    let email: String 
+    let email: String
+    let picture: Picture
 }
 
 struct Name: Codable {
@@ -40,4 +41,8 @@ struct Name: Codable {
 
 struct Location: Codable {
     let state: String
+}
+
+struct Picture: Codable {
+    let large: String
 }
