@@ -39,8 +39,9 @@ class ContactsViewController: UIViewController {
                 return contacts.results
             }
             
-            let contactsResults = contacts.results.filter{$0.name.first.lowercased().contains(searchString.lowercased())}
-//configure search by last name
+            let contactsResults = contacts.results.filter {
+                contact in "\(contact.name.first) \(contact.name.last)".contains(searchString.lowercased())
+            }
             if contactsResults.count > 0 {
                 return contactsResults
             }else{
@@ -50,7 +51,7 @@ class ContactsViewController: UIViewController {
         }
     }
     
-    func showNotFoundAlert() -> Void {
+    func showNotFoundAlert() {
         let alert = UIAlertController(title: "\u{1F5E3} Contact not found!", message: "Please try again", preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
         alert.addAction(alertAction)
@@ -82,7 +83,6 @@ class ContactsViewController: UIViewController {
         {fatalError("No contact found")}
         guard let selectedIndexPath = ContactsTableView.indexPathForSelectedRow else {fatalError()}
         
-        //        contactsDVC.contact = contacts?.results[selectedIndexPath.row]
         contactsDVC.contact = contactsSearchResult[selectedIndexPath.row]
     }
 

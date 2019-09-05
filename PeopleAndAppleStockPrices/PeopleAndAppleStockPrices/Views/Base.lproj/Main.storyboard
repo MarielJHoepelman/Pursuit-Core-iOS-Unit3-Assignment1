@@ -166,6 +166,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="FUZ-0u-cqV" firstAttribute="leading" secondItem="4wu-bO-C7C" secondAttribute="leading" id="5BI-NP-OYw"/>
                                     <constraint firstItem="FUZ-0u-cqV" firstAttribute="centerY" secondItem="4wu-bO-C7C" secondAttribute="centerY" id="6Cd-T5-zNg"/>
                                     <constraint firstAttribute="bottom" secondItem="FUZ-0u-cqV" secondAttribute="bottom" constant="185" id="6zD-Ef-7kl"/>
                                     <constraint firstItem="FUZ-0u-cqV" firstAttribute="leading" secondItem="4wu-bO-C7C" secondAttribute="leading" id="Eov-NV-0uP"/>
@@ -178,6 +179,7 @@
                                     <constraint firstAttribute="trailing" secondItem="FUZ-0u-cqV" secondAttribute="trailing" id="gD0-lY-92l"/>
                                     <constraint firstItem="FUZ-0u-cqV" firstAttribute="centerX" secondItem="4wu-bO-C7C" secondAttribute="centerX" id="ucR-3c-NJj"/>
                                     <constraint firstItem="OAW-Qr-2Ez" firstAttribute="top" secondItem="4wu-bO-C7C" secondAttribute="top" id="vjS-a3-i3p"/>
+                                    <constraint firstAttribute="trailing" secondItem="FUZ-0u-cqV" secondAttribute="trailing" id="zZ4-at-9hQ"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -291,7 +293,7 @@
         <scene sceneID="jf1-uF-mzs">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y6s-nX-ygu" userLabel="People" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="84v-60-bar"/>
+                    <tabBarItem key="tabBarItem" title="People" id="84v-60-bar"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vWu-tg-FMq">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -310,7 +312,7 @@
         <scene sceneID="uhP-eA-Aoc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7DS-eN-MI4" userLabel="Stocks" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="C2i-L1-xdA"/>
+                    <tabBarItem key="tabBarItem" title="Stocks" id="C2i-L1-xdA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xl3-1c-IIh">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

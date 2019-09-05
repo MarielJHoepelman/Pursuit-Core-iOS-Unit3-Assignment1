@@ -25,4 +25,6 @@ struct StocksFromJSON: Codable {
             throw StocksJSONError.decodingError(error)
         }
     }
+    
 }
+
