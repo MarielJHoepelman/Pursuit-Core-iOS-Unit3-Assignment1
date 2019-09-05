@@ -15,13 +15,14 @@ enum ContactsJSONError: Error {
 struct ContactsFromJSON: Codable {
     let results: [Contacts]
     
-    static func getContact(from data: Data) throws -> ContactsFromJSON {
+    static func getContact(from data: Data) throws -> ContactsFromJSON? {
         do {
             let contact = try
                 JSONDecoder().decode(ContactsFromJSON.self, from: data)
             return contact
-        } catch {
-            throw ContactsJSONError.decodingError(error)
+        } catch let decodeError {
+            print("could not decode info \(decodeError)")
+            return nil
         }
     }
     

@@ -35,7 +35,7 @@ class StocksViewController: UIViewController {
                 Data(contentsOf: url)
             
             let stocksFromJSON = try StocksFromJSON.getStocks(from: data)
-            stocks = stocksFromJSON
+            stocks = stocksFromJSON!
             
         } catch {
             print(error)
