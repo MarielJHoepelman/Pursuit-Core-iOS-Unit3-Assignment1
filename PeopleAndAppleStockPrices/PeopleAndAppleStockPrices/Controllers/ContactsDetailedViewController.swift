@@ -34,9 +34,6 @@ class ContactsDetailedViewController: UIViewController {
         }
     }
         
-
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         nameLabel.text = "\(contact.name.first.capitalized) \(contact.name.last.capitalized)"
